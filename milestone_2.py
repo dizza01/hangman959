@@ -36,9 +36,15 @@ import random
 
 word_list = ["banana", "dates", "apple", "orange", "grapes"]
 word = random.choice(word_list)
-print(word)
 
 
+word_list = ["banana", "dates", "apple", "orange", "grapes"]
+word = random.choice(word_list)
+letter_lst = [i[0].split(" ") for i in word]
+
+letters = [i[0] for i in letter_lst]
+
+print(letter_lst)
 
 # In this task, you are required to take user input. As you now know, the print() function in Python displays output on the screen. Conversely, Python has an input() function that takes input from the screen. Note that the input function returns the user input in form of a string.
 
@@ -67,8 +73,11 @@ print(word)
 # Step 3:
 # Create an else block that prints "Oops! That is not a valid input." if the preceding conditions are not met.
 
-guess = input("Enter a letter:")
-if len(guess) == 1:
-    print("Good guess!")
-else:
-    print("Oops! That is not a valid input.")
+
+
+
+# guess = input("Enter a letter:")
+# if len(guess) == 1:
+#     print("Good guess!")
+# else:
+#     print("Oops! That is not a valid input.")
