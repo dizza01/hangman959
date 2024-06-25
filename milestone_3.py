@@ -86,8 +86,8 @@
 import random
 
 word_list = ["banana", "dates", "apple", "orange", "grapes"]
-word = random.choice(word_list)
-letter_lst = [i.split(" ") for i in word]
+# word = random.choice(word_list)
+letter_lst = [i.split(" ") for i in random.choice(word_list)]
 letters = [i[0] for i in letter_lst]
 
 
